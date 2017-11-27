@@ -12,39 +12,39 @@ app.use(bodyParser.json());
 app.post('/', (req, res) => {
   var portNum = req.body.port;
   var peers = {}
-  if (portNum == 50) {
+  if (portNum == 5050) {
      peers = {
        '1': {
          'ip': 'localhost',
-         'port': 51
+         'port': 5051
        },
        '2': {
          'ip': 'localhost',
-         'port': 52
+         'port': 5052
        }
      }
    };
-  if (portNum == 51) {
+  if (portNum == 5051) {
     peers = {
       '1': {
         'ip': 'localhost',
-        'port': 50
+        'port': 5050
       },
       '2': {
         'ip': 'localhost',
-        'port': 52
+        'port': 5052
       }
     }
   };
-  if (portNum == 52) {
+  if (portNum == 5052) {
     peers = {
       '1': {
         'ip': 'localhost',
-        'port': 51
+        'port': 5051
       },
       '2': {
         'ip': 'localhost',
-        'port': 50
+        'port': 5050
       }
     }
   }
